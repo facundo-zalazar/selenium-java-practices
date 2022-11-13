@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-13T19:28:34 ART" name="Command line suite" finished-at="2022-11-13T19:28:51 ART" duration-ms="17031">
+    <groups>
+    </groups>
+    <test started-at="2022-11-13T19:28:34 ART" name="Command line test" finished-at="2022-11-13T19:28:51 ART" duration-ms="17031">
+      <class name="search.TestingSearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:search.TestingSearchTest@60438a68]" started-at="2022-11-13T19:28:34 ART" name="setup" finished-at="2022-11-13T19:28:43 ART" duration-ms="8593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="googleSearchTest_TestingWordandPressEnter()[pri:0, instance:search.TestingSearchTest@60438a68]" started-at="2022-11-13T19:28:43 ART" name="googleSearchTest_TestingWordandPressEnter" finished-at="2022-11-13T19:28:51 ART" duration-ms="8316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearchTest_TestingWordandPressEnter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:search.TestingSearchTest@60438a68]" started-at="2022-11-13T19:28:51 ART" name="teardown" finished-at="2022-11-13T19:28:51 ART" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- search.TestingSearchTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
