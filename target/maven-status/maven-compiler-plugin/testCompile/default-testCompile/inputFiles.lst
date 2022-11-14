@@ -1,2 +1,3 @@
-/Users/facundozalazar/eclipse-workspace/testingOnChrome/src/test/java/search/TestingSearchTest.java
-/Users/facundozalazar/eclipse-workspace/testingOnChrome/src/test/java/base/BaseTest.java
+/Users/facundozalazar/eclipse-workspace/testingOnChrome/src/test/java/selenium/TestingSearchTest.java
+/Users/facundozalazar/eclipse-workspace/testingOnChrome/src/test/java/steps/SearchStepsDef.java
+/Users/facundozalazar/eclipse-workspace/testingOnChrome/src/test/java/selenium/BaseTest.java
