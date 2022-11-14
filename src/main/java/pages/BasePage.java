@@ -5,18 +5,32 @@ import java.time.Duration;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class BasePage extends PageGenerator {
+import base.BaseUiComponent;
+
+public class BasePage extends BaseUiComponent {
+
+    public final WebDriver driver;
+    public final int DEFAULT_TIMEOUT = 10;
 
     public BasePage(WebDriver driver) {
-        super(driver);
+        this.driver = driver;
     }
-
-    WebDriverWait wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
     
     //Only for elements
+    public void waitUntilElementVisible(WebElement webElement) {
+        WebDriverWait wait = new WebDriverWait(driver,  Duration.ofSeconds(DEFAULT_TIMEOUT));
+        wait.until(ExpectedConditions.visibilityOf(webElement));
+    }
+
+    public void waitUntilElementClickable(WebElement webElement) {
+        WebDriverWait wait = new WebDriverWait(driver,  Duration.ofSeconds(DEFAULT_TIMEOUT));
+        wait.until(ExpectedConditions.elementToBeClickable(webElement));
+    }
+    
     public void writeText (WebElement element, String text) {
         element.sendKeys(text);
     }

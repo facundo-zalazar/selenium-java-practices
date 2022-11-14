@@ -5,9 +5,9 @@
     <classes>
       <class name="search.TestingSearchTest">
         <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="googleSearchTest_TestingWordandPressEnter"/>
+          <include name="testGoogleSearch"/>
+          <include name="killDriver"/>
+          <include name="spinUpDriver"/>
         </methods>
       </class> <!-- search.TestingSearchTest -->
     </classes>

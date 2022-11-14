@@ -8,12 +8,14 @@ import pages.GoogleResultsPage;
 
 public class TestingSearchTest extends BaseTest {
 
-    @Test
-    public void googleSearchTest_TestingWordandPressEnter() throws InterruptedException {
+	@Test(description = "Search the word 'testing' on google search and check the results.")
+    public void testGoogleSearch(){
     	String term = "testing";
-        page.GetInstance(GoogleSearchHomePage.class).goToUrl();
-        page.GetInstance(GoogleSearchHomePage.class).doASearch(term);
-        page.GetInstance(GoogleResultsPage.class).verifySearch(term);
+    	GoogleSearchHomePage home_page = pages().getGoogleSearchHomePage();
+    	home_page.goToUrl();
+    	home_page.doASearch(term);
+    	GoogleResultsPage results_page = pages().getGoogleResultsPage();
+    	results_page.verifySearch(term);
     }
 
 }
