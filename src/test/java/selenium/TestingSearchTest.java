@@ -2,8 +2,8 @@ package selenium;
 
 import org.testng.annotations.Test;
 
-import pages.GoogleResultsPage;
-import pages.GoogleSearchHomePage;
+import com.pages.GoogleResultsPage;
+import com.pages.GoogleSearchHomePage;
 
 public class TestingSearchTest extends BaseTest {
 

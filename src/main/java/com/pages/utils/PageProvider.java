@@ -1,10 +1,10 @@
-package base;
+package com.pages.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import pages.GoogleResultsPage;
-import pages.GoogleSearchHomePage;
+import com.pages.GoogleResultsPage;
+import com.pages.GoogleSearchHomePage;
 
 public class PageProvider {
 

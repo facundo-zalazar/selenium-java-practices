@@ -1,18 +1,18 @@
-package steps;
+package com.StepsDef;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import base.BaseUiComponent;
+import com.pages.GoogleResultsPage;
+import com.pages.GoogleSearchHomePage;
+import com.pages.utils.BaseUiComponent;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.GoogleResultsPage;
-import pages.GoogleSearchHomePage;
-import selenium.BaseTest;
 
-public class SearchStepsDef extends BaseTest {
+public class SearchStepsDef extends BaseUiComponent {
 
 	private String keyToSearch = "";
 	GoogleSearchHomePage searchPage;

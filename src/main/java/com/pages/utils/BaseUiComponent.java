@@ -1,10 +1,10 @@
-package base;
+package com.pages.utils;
 
 import org.openqa.selenium.WebDriver;
 
 public class BaseUiComponent {
 
-    private static WebDriver driver;
+    protected static WebDriver driver;
 
     public static void setDriver(WebDriver driver) {
         BaseUiComponent.driver = driver;

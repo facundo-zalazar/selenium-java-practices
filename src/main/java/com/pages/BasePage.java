@@ -1,4 +1,4 @@
-package pages;
+package com.pages;
 
 import java.time.Duration;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import base.BaseUiComponent;
+import com.pages.utils.BaseUiComponent;
 
 public class BasePage extends BaseUiComponent {
 
