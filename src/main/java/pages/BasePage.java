@@ -14,7 +14,7 @@ import base.BaseUiComponent;
 public class BasePage extends BaseUiComponent {
 
     public final WebDriver driver;
-    public final int DEFAULT_TIMEOUT = 5;
+    public final int DEFAULT_TIMEOUT = 10;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
