@@ -12,7 +12,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class SearchStepsDef extends BaseUiComponent {
+public class GoogleSearchStepsDef extends BaseUiComponent {
 
 	private String keyToSearch = "";
 	GoogleSearchHomePage searchPage;
@@ -26,20 +26,20 @@ public class SearchStepsDef extends BaseUiComponent {
     }
 
 	@Given("I am in the google.com webpage")
-	public void i_am_in_the_google_com_webpage() {
+	public void iAmInTheGoogleDotComWebpage() {
 		searchPage = pages().getGoogleSearchHomePage();
 		searchPage.goToUrl();
 	}
 
 	@When("I enter a {string} and press Enter key")
-	public void i_enter_a_and_press_enter_key(String text) {
+	public void iEnterAStringAndPressEnterKey(String text) {
 		searchPage = pages().getGoogleSearchHomePage();
 		keyToSearch = text;
 		searchPage.doASearch(keyToSearch);
 	}
 
 	@Then("I should be in the correct results page")
-	public void i_should_be_in_the_correct_results_page() {
+	public void iShouldBeInTheCorrectResultsPage() {
 		resultsPage = pages().getGoogleResultsPage();
 		resultsPage.verifySearch(keyToSearch);
 	}
